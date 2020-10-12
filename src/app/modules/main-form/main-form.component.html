@@ -1,0 +1,31 @@
+<section class="container__wrapper">
+  <form (ngSubmit)="submitHandler()" [formGroup]="mainForm" class="container">
+    <app-name class="container__field" formControlName="name"></app-name>
+    <app-gender class="container__field" formControlName="gender"></app-gender>
+    <app-date class="container__field" formControlName="date"></app-date>
+    <app-marital-status
+      *ngIf="hasMaritalStatus"
+      [selectedGender]="selectedGender"
+      class="container__field"
+      formControlName="maritalStatus"
+    ></app-marital-status>
+    <app-amount-children
+      appChangeNumberWithPlusAndMinus
+      class="container__field"
+      formControlName="amountChildren"
+    ></app-amount-children>
+    <app-e-mail class="container__field" formControlName="eMail"></app-e-mail>
+    <app-comment
+      class="container__field"
+      formControlName="comment"
+    ></app-comment>
+    <button
+      [disabled]="!mainForm.valid"
+      color="primary"
+      mat-flat-button
+      type="submit"
+    >
+      Сохранить
+    </button>
+  </form>
+</section>

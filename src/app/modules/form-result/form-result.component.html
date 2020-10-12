@@ -1,0 +1,25 @@
+<section *ngIf="formResultQuery$ | async as formResultQuery" class="container">
+  <h2>Результат заполнения формы</h2>
+
+  <p *ngIf="formResultQuery.name" class="container__field">
+    <span>Имя:</span> {{ formResultQuery.name }}
+  </p>
+  <p *ngIf="formResultQuery.gender" class="container__field">
+    <span>Пол:</span> {{ formResultQuery.gender.name }}
+  </p>
+  <p *ngIf="formResultQuery.date" class="container__field">
+    <span>Дата рождения:</span> {{ formResultQuery.date }}
+  </p>
+  <p *ngIf="formResultQuery.maritalStatus" class="container__field">
+    <span>Семейное положение:</span> {{ formResultQuery.maritalStatus }}
+  </p>
+  <p *ngIf="formResultQuery.amountChildren" class="container__field">
+    <span>Количество детей:</span> {{ formResultQuery.amountChildren }}
+  </p>
+  <p *ngIf="formResultQuery.eMail" class="container__field">
+    <span>e-mail:</span> {{ formResultQuery.eMail }}
+  </p>
+  <p *ngIf="formResultQuery.comment" class="container__field">
+    <span>Комментарий:</span> {{ formResultQuery.comment }}
+  </p>
+</section>

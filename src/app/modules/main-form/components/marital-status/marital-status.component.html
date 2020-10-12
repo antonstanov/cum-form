@@ -1,0 +1,23 @@
+<mat-form-field appearance="fill">
+  <mat-label>Семейное положение</mat-label>
+  <mat-select [(ngModel)]="value">
+    <mat-option [value]="{ value: 'single', name: 'Нет' }">
+      Нет
+    </mat-option>
+    <mat-option
+      *ngIf="selectedGender === 'male'"
+      [value]="{ value: 'marriedMan', name: 'Женат' }"
+    >
+      Женат
+    </mat-option>
+    <mat-option
+      *ngIf="selectedGender === 'female'"
+      [value]="{ value: 'marriedFemale', name: 'Замужем' }"
+    >
+      Замужем
+    </mat-option>
+    <mat-option [value]="{ value: 'divorced', name: 'В разводе' }">
+      В разводе
+    </mat-option>
+  </mat-select>
+</mat-form-field>

@@ -1,0 +1,14 @@
+<mat-radio-group [(ngModel)]="value" aria-label="Выберите Ваш пол">
+  <mat-radio-button
+    [value]="{ value: 'male', name: 'Мужчина' }"
+    color="primary"
+    value="male"
+  >Мужчина
+  </mat-radio-button>
+  <mat-radio-button
+    [value]="{ value: 'female', name: 'Женщина' }"
+    color="primary"
+    value="female"
+  >Женщина
+  </mat-radio-button>
+</mat-radio-group>

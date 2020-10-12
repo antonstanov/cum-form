@@ -1,0 +1,23 @@
+:host {
+  &::ng-deep {
+    mat-form-field {
+      width: 100%;
+    }
+
+    .container {
+      width: 350px;
+      margin: 0 auto;
+      padding: 1.25em;
+
+      &__field {
+        display: block;
+
+        width: 100%;
+
+        &.ng-dirty.ng-invalid .mat-form-field-label { // todo tmp
+          color: #f44336;
+        }
+      }
+    }
+  }
+}

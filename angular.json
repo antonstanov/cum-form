@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -92,6 +93,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +125,11 @@
           }
         }
       }
-    }},
-  "defaultProject": "cum-form"
+    }
+  },
+  "defaultProject": "cum-form",
+  "cli": {
+    "analytics": "7f168d97-5cc5-430b-b884-d1bc88dd444c",
+    "defaultCollection": "@datorama/akita"
+  }
 }

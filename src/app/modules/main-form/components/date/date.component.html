@@ -1,0 +1,6 @@
+<mat-form-field appearance="fill">
+  <mat-label>Укажите дату рождения:</mat-label>
+  <input [(ngModel)]="value" [matDatepicker]="date" matInput>
+  <mat-datepicker-toggle [for]="date" matSuffix></mat-datepicker-toggle>
+  <mat-datepicker #date></mat-datepicker>
+</mat-form-field>
